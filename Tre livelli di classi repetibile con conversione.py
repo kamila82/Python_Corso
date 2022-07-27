@@ -41,12 +41,6 @@ class Calcola_Ragione2(Perito_2):
     def __init__(self) -> None:
         super().__init__()
 
-##############################################################################################################
-
-# questo non funzionava, perchè in conversione conv_in_j(x) mi diceva: "conv_in_j() takes 1 positional argument (che era self) but 2 were given"
-# ho risolto lasciando le parentesi del richiamo della conv_in_j() vuote al posto di passargli come l'argomento il risultato x
-# e poi passandoglielo qui invece: conv = Converting(x)
-
 class Converting(Assicurazione):
     def __init__(self, ris_ass_rag):
         Assicurazione.__init__(self, ris_ass_rag)
